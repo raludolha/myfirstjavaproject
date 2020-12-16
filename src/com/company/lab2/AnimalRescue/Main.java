@@ -24,7 +24,10 @@ public class Main {
         System.out.println("Brida's adoptator name is:" +myPerson.getPersonName() +  "   ,She has a lot of money:" +myPerson.getPersonMoney());
 
         Vet myVet=new Vet();
-        System.out.println("Brida's vet name is:" +myVet.name + " , She is a :" + myVet.specialization);
+        myVet.setVetName("Anna");
+        myVet.setVetSpecialization("Doctor");
+
+        System.out.println("Brida's vet name is:" +myVet.getVetName() + " , She is a :" + myVet.getVetSpecialization());
 
         Dogfood mydogFood= new Dogfood();
         mydogFood.setDogfoodName("Friskies");
