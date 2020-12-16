@@ -23,6 +23,15 @@ public class Tema3 {
         op.CompareSwitch(15);
 
 
+        String result2 = op.Compare7(10);
+        System.out.println(result2);
+
+
+        String result3 = op.Compare8(2,3,4);
+        System.out.println(result3);
+
+
+
 
 }
 

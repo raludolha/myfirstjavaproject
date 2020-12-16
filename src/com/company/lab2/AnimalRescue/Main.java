@@ -19,14 +19,20 @@ public class Main {
         );
 
         Person myPerson=new Person();
-        System.out.println("Brida's adoptator name is:" +myPerson.name +  "   ,She has a lot of money:" +myPerson.money);
+        myPerson.setPersonName("Ralu");
+        myPerson.setPersonMoney(1234d);
+        System.out.println("Brida's adoptator name is:" +myPerson.getPersonName() +  "   ,She has a lot of money:" +myPerson.getPersonMoney());
 
         Vet myVet=new Vet();
         System.out.println("Brida's vet name is:" +myVet.name + " , She is a :" + myVet.specialization);
 
         Dogfood mydogFood= new Dogfood();
-        System.out.println("Brida's favorite food is:" +mydogFood.name +
-                " ,witch costs  " +mydogFood.price + ", Quantity is  " +mydogFood.quantity + " In stock: " +mydogFood.disponibility);
+        mydogFood.setDogfoodName("Friskies");
+        mydogFood.setDogfoodPrice(2);
+        mydogFood.setDogfoodQuantity(15);
+        mydogFood.setDogfoodDisponibility(true);
+        System.out.println("Brida's favorite food is:" +mydogFood.getDogfoodName() +
+                " ,witch costs  " +mydogFood.getDogfoodPrice() + ", Quantity is  " +mydogFood.getDogfoodQuantity() + " In stock: " +mydogFood.getDogfoodDisponibility());
 
         Activities myActivities=new Activities();
         myActivities.setActivityName("sleeping");

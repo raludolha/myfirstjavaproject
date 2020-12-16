@@ -63,4 +63,42 @@ public class LogicOp {
         }
 
     }
+//    7. Creati o metoda de tip String, care sa primeasca un parametru de tip numar.
+//    Daca numarul e mai mare decat 3, SI nu egal cu 4, returnati “The number is greater than 3 and not equal to 4”.
+//    Daca numarul este egal cu 4, returnati “The number is equal to 4”,
+//    iar daca numarul este mai mic de 3 returnati “The number is lower than 3”.
+//    Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public String Compare7 (int y){
+        if (y > 3 && y != 4) {
+            return ("The number is greater than 3 and not equal to 4");
+
+        } else if (y == 4) {
+            return ("The number is equal to 4");
+
+        } else if (y < 3) {
+            return ("The number is lower than 3");
+        }
+
+
+    return ("The number does not meet any of the requirements");
+    }
+//    Creati o metoda care sa primeasca 3 numere ca si parametrii
+//    si sa returneze cel mai mare numar. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+        public String Compare8 (int a, int b, int c){
+        if (a>b&& a>c){
+            return ("The biggest number is a");
+
+
+    } else if (b>a&&b>c){
+            return ("The biggest number is b");
+
+        }else if (c>a&&c>b){
+            return ("The biggest number is c");
+        }
+
+return ("The number does not meet any of the requirements");
+
+    }
 }
