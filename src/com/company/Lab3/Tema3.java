@@ -30,7 +30,17 @@ public class Tema3 {
         String result3 = op.Compare8(2,3,4);
         System.out.println(result3);
 
+        op.Count100(6);
+    op.Countdown(-4);
+    op.Countbetween(3,90);
+    op.Countbiggest(90, 9);
+    op.Numerepare();
+    op.Numereimpare();
 
+    int sum = op.Numbers(1);
+        System.out.println(sum );
+        float avg = op.Numbersmedia(99);
+        System.out.println(avg);
 
 
 }

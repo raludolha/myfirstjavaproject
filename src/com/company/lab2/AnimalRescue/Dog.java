@@ -1,13 +1,13 @@
 package com.company.lab2.AnimalRescue;
 
 public class Dog {
-    private String name = "Brida";
-    private int age = 1;
-    private int health = 10;
-    private int mood = 9;
-    private int hungry = 9;
-    private String favoriteFood = "Friskies";
-    private String favoriteSport = "Running";
+    private String name ;
+    private int age ;
+    private int health ;
+    private int mood ;
+    private int hungry ;
+    private String favoriteFood ;
+    private String favoriteSport ;
 
     public String getDogname() {
         return this.name;
