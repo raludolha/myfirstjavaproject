@@ -42,8 +42,17 @@ public class Tema3 {
         float avg = op.Numbersmedia(99);
         System.out.println(avg);
         op.Asterix();
+        op.Nrwhile(0);
+        op.Nrdown(0);
+        op.Countbetween2(2, 90);
+        op.Countbiggest2(166, 400);
+        op.Numerepare2();
+        op.Numereimpare2();
+        op.Numbers2();
+        op.Div(1, 7);
 
 
 }
+
 
     }

@@ -22,44 +22,47 @@ public class LogicOp {
 //    returnati numarul si textul, in ordinea asta. Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
-
-    public String Compare (String text ,int a){
-        if (text.equals("FastTrackIT")&& a<=3){
+    public String Compare(String text, int a) {
+        if (text.equals("FastTrackIT") && a <= 3) {
             return text + a;
-        }
-        else return a +text;
+        } else return a + text;
 
 
     }
-//    6. Creati o metoda de tip String, care sa primeasca un parametru de tip int.
+
+    //    6. Creati o metoda de tip String, care sa primeasca un parametru de tip int.
 //    Daca numarul primit este mai mare de 8, SAU egal cu 6, atunci sa se returneze
 //        “The amount of snow this winter was(cm): “ si numarul. Daca nu, sa printeze “
 //    The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca functioneaza.
-   public String Compareint (int b){
-        if (b>8||b==6){
+    public String Compareint(int b) {
+        if (b > 8 || b == 6) {
             return "The amount of snow this winter was(cm)" + b;
 
-        }
-        else return "The forecast snow is(cm):" + b;
+        } else return "The forecast snow is(cm):" + b;
 
     }
-//    Creati o metoda care primeste un numar ca si parametru si sa afiseze ce numar a primit.
+
+    //    Creati o metoda care primeste un numar ca si parametru si sa afiseze ce numar a primit.
 //    Folosind constructia Switch-Case, verificati ce numar s-a primit si afisati textul "The number is:  x !"
 //    unde x trebuie sa reprezinte numarul apasat. Pentru exemplul de fata sa nu se foloseasca concatenarea stringului "The number is:"
 //    cu numarul de la parametru, ci sa se scrie intreg textul cu tot cu numar pentru fiecare caz din Switch-Case. Apelati metoda in main() pentru a verifica daca functioneaza.
-    public void CompareSwitch (int c){
+    public void CompareSwitch(int c) {
 
         //Switch expression
-        switch(c){
+        switch (c) {
             //Case statements
-            case 10: System.out.println("The number is 10");
+            case 10:
+                System.out.println("The number is 10");
                 break;
-            case 20: System.out.println("The number is 20");
+            case 20:
+                System.out.println("The number is 20");
                 break;
-            case 30: System.out.println("The number is 30");
+            case 30:
+                System.out.println("The number is 30");
                 break;
             //Default case statement
-            default:System.out.println("Not in 10, 20 or 30");
+            default:
+                System.out.println("Not in 10, 20 or 30");
         }
 
     }
@@ -69,7 +72,7 @@ public class LogicOp {
 //    iar daca numarul este mai mic de 3 returnati “The number is lower than 3”.
 //    Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public String Compare7 (int y){
+    public String Compare7(int y) {
         if (y > 3 && y != 4) {
             return ("The number is greater than 3 and not equal to 4");
 
@@ -81,49 +84,48 @@ public class LogicOp {
         }
 
 
-    return ("The number does not meet any of the requirements");
+        return ("The number does not meet any of the requirements");
     }
 //    Creati o metoda care sa primeasca 3 numere ca si parametrii
 //    si sa returneze cel mai mare numar. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-        public String Compare8 (int a, int b, int c){
-        if (a>b&& a>c){
+    public String Compare8(int a, int b, int c) {
+        if (a > b && a > c) {
             return ("The biggest number is a");
 
 
-    } else if (b>a&&b>c){
+        } else if (b > a && b > c) {
             return ("The biggest number is b");
 
-        }else if (c>a&&c>b){
+        } else if (c > a && c > b) {
             return ("The biggest number is c");
         }
 
-return ("The number does not meet any of the requirements");
+        return ("The number does not meet any of the requirements");
 
     }
- //   Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
-  //  Metoda sa verifice numarul primit, si sa afiseze in consola o numaratoare pana la 100,
-   // pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
+    //   Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
+    //  Metoda sa verifice numarul primit, si sa afiseze in consola o numaratoare pana la 100,
+    // pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
 
-
-   public void Count100 (int s){
-        if (s<100);
-        for (int i=s; i<=100; i++){
+    public void Count100(int s) {
+        if (s < 100) ;
+        for (int i = s; i <= 100; i++) {
             System.out.print(i + " ");
 
         }
-       System.out.println();
+        System.out.println();
 
-   }
-   //2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
+    }
+    //2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
     // Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la -100,
     // pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei,
     // deoarece metoda afiseaza, nu returneaza.
 
-    public void Countdown (int d){
-        if (d>(-100))
-            for (int i=d; i>=(-100); i--){
+    public void Countdown(int d) {
+        if (d > (-100))
+            for (int i = d; i >= (-100); i--) {
                 System.out.print(i + " ");
 
             }
@@ -137,9 +139,9 @@ return ("The number does not meet any of the requirements");
     //
     //Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
-    public void Countbetween (int a, int b){
+    public void Countbetween(int a, int b) {
 
-        for (int i=a; i<=b; i++){
+        for (int i = a; i <= b; i++) {
             System.out.println(i + " ");
         }
     }
@@ -151,55 +153,59 @@ return ("The number does not meet any of the requirements");
     //
     //Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
-    public void Countbiggest (int z, int x) {
-        if (z>x)
-        for (int i=x; i<=z; i++ ){
-            System.out.print(i + " ");
-        }
-        else for (int i=z; i<=x; i++){
+    public void Countbiggest(int z, int x) {
+        if (z > x)
+            for (int i = x; i <= z; i++) {
+                System.out.print(i + " ");
+            }
+        else for (int i = z; i <= x; i++) {
             System.out.print(i + " ");
         }
     }
     //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
 
-    public void Numerepare (){
-        for (int i=2; i<=100; i=i+2){
+    public void Numerepare() {
+        for (int i = 2; i <= 100; i = i + 2) {
             System.out.println(i);
         }
 
     }
-//6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
-    public void Numereimpare (){
-        for (int i=1; i<=100; i=i+2){
+
+    //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+    public void Numereimpare() {
+        for (int i = 1; i <= 100; i = i + 2) {
             System.out.println(i);
         }
     }
+
     //7. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
     // Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
     // iar la final sa returneze rezultatul. Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
-    public int Numbers (int a){
-        int sum=0;
-        for (int i=a; i<=100; i++){
-           sum = sum +i;
+    public int Numbers(int a) {
+        int sum = 0;
+        for (int i = a; i <= 100; i++) {
+            sum = sum + i;
 
         }
 
-    return sum;
+        return sum;
     }
+
     //8. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
     // Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
     // si sa calculeze media numerelor. La final, metoda sa returneze media. Apelati metoda in clasa Main,
     // metoda main() pentru a verifica daca functioneaza.
-    public float Numbersmedia (int a){
-        float sum=0;
-        for (int i=a; i<=100; i++){
-            sum = sum +i;
+    public float Numbersmedia(int a) {
+        float sum = 0;
+        for (int i = a; i <= 100; i++) {
+            sum = sum + i;
 
         }
-        float avg=sum/(100-a+1);
+        float avg = sum / (100 - a + 1);
 
-        return avg;}
-        //9. Creat o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
+        return avg;
+    }
+    //9. Creat o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
     //
     //
     //*******
@@ -225,8 +231,8 @@ return ("The number does not meet any of the requirements");
     //
     //Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
-    public void Asterix (){
-        for (int i=0; i<7; i++ ) {
+    public void Asterix() {
+        for (int i = 0; i < 7; i++) {
             for (int j = 0; j < 7 - i; j++) {
                 System.out.print("*");
             }
@@ -234,4 +240,125 @@ return ("The number does not meet any of the requirements");
         }
     }
 
+    // 1. Creati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru.
+// Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la 100, pornind de la numarul primit ca si parametru.
+// Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
+    public void Nrwhile(int a) {
+        int i = a;
+        while (i <= 100) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println(" ");
+    }
+
+    //2. Creati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru.
+// Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la -100, pornind de la numarul primit ca si parametru.
+// Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
+    public void Nrdown(int b) {
+        int i = b;
+        while (i >= (-100)) {
+            System.out.print(i + " ");
+            i--;
+        }
+        System.out.println();
+    }
+
+    //3. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar.
+    // Metoda sa afiseze o numaratoare intre cele doua numere primite, pornind de la primul parametru primit,
+    // pana la cel de-al doilea(ex: daca int x e primul parametru iar int y  este cel de-al doilea, numaratoarea sa se faca de la x, la y.
+
+    public void Countbetween2(int a, int b) {
+        int i = a;
+        while (i <= b) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+
+    }
+    //4. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar.
+    // Metoda trebuie sa verifice care dintre cele doua numere este mai mare, si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
+    // (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x).
+
+    public void Countbiggest2(int z, int x) {
+
+        if (x < z) {
+            int i = x;
+            while (i <= z) {
+                System.out.print(i + " ");
+                i++;
+            }
+        } else {
+            int i = z;
+            while (i <= x) {
+                System.out.print(i + " ");
+                i++;
+            }
+        }
+        System.out.println();
+
+    }
+
+    //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+    public void Numerepare2() {
+        int i = 2;
+        while (i <= 100) {
+            System.out.println(i);
+            i = i + 2;
+        }
+
+
+    }
+    //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+
+    public void Numereimpare2() {
+        int i = 1;
+        while (i <= 100) {
+            System.out.println(i);
+            i = i + 2;
+        }
+    }
+//7. Creati o metoda care sa adune toate numerele din intervalul 111 si 8899. Sa se afiseze suma totala,
+// iar dupa aceea sa se calculeze si afiseze media numerelor din acel interval. Introduceti o variabila int count in metoda,
+// pentru a numara toate numerele din interval.
+
+
+    public void Numbers2() {
+        float sum = 0;
+        float i = 111;
+        float count = 0;
+        while (i <= 8899) {
+            sum = sum + i;
+            i++;
+            count++;
+
+        }
+        float avg = sum / count;
+        System.out.println(sum + " " + avg);
+    }
+
+    //8. Creati o metoda care sa primeasca doi parametrii de tip numar, si sa returneze media numerelor divizibile cu 7, din acel interval.
+
+    public void Div(int a, int b) {
+        float i = 0;
+        float sum = 0;
+        float count = 0;
+        while (i <= b) {
+            if (i % 7 == 0) {
+                sum = sum + i;
+                count++;
+            }
+            i++;
+        }
+        float avg = sum / count;
+        System.out.println(avg);
+    }
+
+
 }
+
+//9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
+
+
+
