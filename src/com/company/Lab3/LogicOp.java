@@ -225,4 +225,13 @@ return ("The number does not meet any of the requirements");
     //
     //Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
+    public void Asterix (){
+        for (int i=0; i<7; i++ ) {
+            for (int j = 0; j < 7 - i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
 }

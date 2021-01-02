@@ -41,6 +41,7 @@ public class Tema3 {
         System.out.println(sum );
         float avg = op.Numbersmedia(99);
         System.out.println(avg);
+        op.Asterix();
 
 
 }
