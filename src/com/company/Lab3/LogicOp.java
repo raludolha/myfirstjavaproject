@@ -356,9 +356,60 @@ public class LogicOp {
     }
 
 
-}
+
 
 //9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
 
+    public void Fibonacci() {
+        int n = 20;
+        int first = 0;
+        int next = 1;
+        int sum = 0;
+        System.out.println("The first  " + 20 + " Fibonacci numbers are:  ");
+        System.out.print(first + " " + next);
+
+        int i = 1;
+        while (i < n - 1)
+        {
+            sum = first + next;
+        first = next;
+        next = sum;
+        System.out.print(" " + sum);
+        i++;}
+
+    }
+}
 
 
+//10. Creati o metoda numita CozaLozaWoza.
+//
+//        Metoda va afisa:
+//
+//        - numerele de la 1 la 110
+//
+//        - 11 numere pe linie
+//
+//        - se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
+//
+//        - se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
+//
+//        - se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
+//
+//        - se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
+//
+//        - se va afisa CozaWoza pentru multiplu de 3 SI 7
+//
+//        - se va afisa WozaLoza pentru multiplu de 5 SI 7
+//
+//        - se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
+//
+//        Ar trebui sa arate similar:
+//
+//        1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11
+//
+//        Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
+//
+//        23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza
+//
+//
+//        ......

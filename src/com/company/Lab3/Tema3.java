@@ -50,6 +50,7 @@ public class Tema3 {
         op.Numereimpare2();
         op.Numbers2();
         op.Div(1, 7);
+        op.Fibonacci();
 
 
 }
