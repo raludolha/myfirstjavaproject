@@ -57,5 +57,8 @@ public class Animal {
     public String getEating() {
         return eating;
     }
+    public void pooping (){
+        System.out.println("i poop");
+    }
 
 }

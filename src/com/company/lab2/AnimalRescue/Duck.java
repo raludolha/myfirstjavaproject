@@ -19,5 +19,8 @@ public class Duck extends Animal{
     public void setQuack(String quack) {
         Quack = quack;
     }
+    public void pooping (){
+        System.out.println("i poop once a week");
+    }
 
 }

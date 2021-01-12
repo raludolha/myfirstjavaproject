@@ -19,5 +19,8 @@ public class Calculator {
 
         return (firstNumber / secondNumber / thirdNumber);
     }
-
+    float sum(float firstNumber, float secondNumber) {
+        return (firstNumber + secondNumber);
+    }
 }
+

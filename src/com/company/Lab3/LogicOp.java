@@ -356,8 +356,6 @@ public class LogicOp {
     }
 
 
-
-
 //9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
 
     public void Fibonacci() {
@@ -369,19 +367,18 @@ public class LogicOp {
         System.out.print(first + " " + next);
 
         int i = 1;
-        while (i < n - 1)
-        {
+        while (i < n - 1) {
             sum = first + next;
-        first = next;
-        next = sum;
-        System.out.print(" " + sum);
-        i++;}
+            first = next;
+            next = sum;
+            System.out.print(" " + sum);
+            i++;
+        }
 
     }
-}
 
 
-//10. Creati o metoda numita CozaLozaWoza.
+    //10. Creati o metoda numita CozaLozaWoza.
 //
 //        Metoda va afisa:
 //
@@ -413,3 +410,156 @@ public class LogicOp {
 //
 //
 //        ......
+    public void wozaCozaLoza() {
+
+        int i = 1;
+
+        while (i <= 110) {
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaLozaWoza ");
+
+            } else if (i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("WozaLoza ");
+
+            } else if (i % 3 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaWoza ");
+
+            } else if (i % 3 == 0 && i % 5 == 0) {
+
+                System.out.print("CozaLoza ");
+
+            } else if (i % 7 == 0) {
+
+                System.out.print("Woza ");
+
+            } else if (i % 5 == 0) {
+
+                System.out.print("Loza ");
+
+            } else if (i % 3 == 0) {
+
+                System.out.print("Coza ");
+
+            } else {
+
+                System.out.print(i + " ");
+
+            }
+
+            if (i % 11 == 0) {
+
+                System.out.println();
+
+            }
+
+            i++;
+
+        }
+
+    }
+    ////2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100.
+    //// Sa se afiseze progresul in consola pe tot parcursul. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void Array100(){
+        int[] Array100= new int[100];
+        int i;
+        for (i=0; i<100; i++){
+            Array100[i]=i+1;
+            System.out.println((i+1) + "inserted");
+        }
+
+
+    }
+    //3. Creati o metoda care primeasca un parametru de tip array de numere intregi gol,
+    // si sa il returneze populat cu toate valorile pare de la 1 la 100. Apelati metoda in main() pentru a verifica daca functioneaza.
+    // Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla.
+
+
+    public int[] Arrayeven (int[] blind){
+        int i;
+        int j=0;
+        for (i=2; i<=100; i=i+2){
+            blind[j]= i;
+            j++;
+
+
+        }
+        return blind;
+
+    }
+    //4. Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
+    // Metoda sa calculeze si sa returneze media numerelor din array. Apelati metoda in main() pentru a verifica daca functioneaza.
+    public float Arrayavg (int[] avg){
+        int i;
+        float sum = 0;
+        for (i=0; i<avg.length; i++){
+            sum=sum +avg[i];
+
+        }
+        return sum/ avg.length;
+    }
+    //5. Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori, si un parametru de tip String.
+    // Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit, iar daca da sa returneze true iar daca nu, sa returneze false.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public boolean Truefalse (String[] names , String someone){
+        boolean exists= false;
+        int i;
+        for(i=0; i< names.length; i++ ){
+            if(names[i]==someone)
+                exists=true;
+
+
+        }
+        return exists;
+    }
+    //6. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
+    // Metoda sa verifice daca numarul primit se afla in array-ul primit, si daca da, atunci sa returneze pozitia pe care se afla numarul.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+    public int Return (int[] a, int b){
+        int i;
+        for (i=0; i< a.length; i++){
+            if(a[i]==b){
+                return i;
+            }
+        }
+        return -1;
+    }
+//8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
+// Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
+// Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+    public  int secondsmallest (int[]a){
+        int c;
+        int i;
+        int j;
+        for (i=0; i<a.length; i++){
+            for(j=i+1; j<a.length; j++){
+                if (a[i]>a[j]){
+                    c= a[i];
+                    a[i]=a[j];
+                    a[j]=c;
+                }
+            }
+        }
+        return a[1];
+    }
+    //10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
+    // Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+    public int[] copyarray (int[]a, int[]b) {
+        int i;
+        for (i=0; i<a.length; i++){
+            b[i]=a[i];
+        }
+        return b;
+    }
+
+
+}

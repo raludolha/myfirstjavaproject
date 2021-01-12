@@ -49,4 +49,7 @@ public class Dog extends Animal{
         this.mood = mood;
 
     }
+    public void pooping (){
+        System.out.println("i poop twice a day");
+    }
 }

@@ -64,7 +64,8 @@ public class Main {
         System.out.println("My duck type is :" + myDuck.getType()
         + " her quack is: " + myDuck.getQuack());
 
-
+    myCat.pooping();
+    myDog.pooping();
 
     }
 

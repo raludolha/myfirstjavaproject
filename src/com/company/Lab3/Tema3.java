@@ -51,9 +51,35 @@ public class Tema3 {
         op.Numbers2();
         op.Div(1, 7);
         op.Fibonacci();
+        op.wozaCozaLoza();
 
+        float result4 =pc.sum(2,3f);
+        System.out.println(result4);
+        op.Array100();
 
+        int[] Array= new int[50];
+    int[] resultarray =op.Arrayeven(Array);
+        System.out.println(resultarray);
+        int i;
+        for (i=0; i<=49; i++){
+            System.out.println(resultarray[i]);
+        }
+       int[] ralu=new int[]{5,6,6};
+        float resultarray2=op.Arrayavg(ralu);
+        System.out.println(resultarray2);
+    boolean results= op.Truefalse(new String[]{"Ralu", "Noemi","Cristi"}, "Brida");
+        System.out.println(results);
+        int position= op.Return(new int[]{1,2,3,4}, 4);
+        System.out.println(position);
+        int second= op.secondsmallest(new int[]{3,1,8,2});
+        System.out.println(second);
+        int[]a ={4,5,6,7}; int[]b=new int[a.length];
+        b=op.copyarray(a,b);
+        for (i=0; i<b.length; i++){
+            System.out.println(b[i]);
 }
 
 
-    }
+
+
+    }}
