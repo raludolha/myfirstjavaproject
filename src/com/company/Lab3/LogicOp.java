@@ -561,9 +561,23 @@ public class LogicOp {
         return b;
     }{
     }
-}
 
-//3. Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista,
-// iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista,
-// fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
-//
+
+//5. In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru, si un numar.
+////    Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia numarului primit,
+////    iar daca valoarea numarului este mai mare decat numarul de pozitii din array, afisati textul:
+////    "Inside catch, number too large".
+
+    public void findOutOfBounds(int[] array, int position){
+        try {
+            System.out.println(array[position]);
+        }
+        catch(ArrayIndexOutOfBoundsException exception) {
+            System.out.println("Pozitia e mai mare decat lungimea array-ului");
+        }
+    }
+//    6. In clasa LogicalOp, creati o metoda  'wait()'. Metoda sa nu returneze nimic,
+//    dar sa primeasca un parametru de tip int. In interiorul ei, tratati metoda Thread.sleep(),
+//    astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte. Ex: wait(5) -> asteapta 5 secunde.
+
+}

@@ -77,7 +77,12 @@ public class Tema3 {
         b=op.copyarray(a,b);
         for (i=0; i<b.length; i++){
             System.out.println(b[i]);
+
+
+
 }
+
+        op.findOutOfBounds(new int[]{1,2,3},6);
 
 
 
