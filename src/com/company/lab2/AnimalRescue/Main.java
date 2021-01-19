@@ -18,10 +18,10 @@ public class Main {
                 "Her favorite food is:" + myDog.getFavoriteFood()
         );
 
-        Person myPerson = new Person();
-        myPerson.setPersonName("Ralu");
-        myPerson.setPersonMoney(1234d);
-        System.out.println("Brida's adoptator name is:" + myPerson.getPersonName() + "   ,She has a lot of money:" + myPerson.getPersonMoney());
+//        Person myPerson = new Person();
+//        myPerson.setPersonName("Ralu");
+//        myPerson.setPersonMoney(1234d);
+//        System.out.println("Brida's adoptator name is:" + myPerson.getPersonName() + "   ,She has a lot of money:" + myPerson.getPersonMoney());
 
         Vet myVet = new Vet();
         myVet.setVetName("Anna");
@@ -66,6 +66,10 @@ public class Main {
 
     myCat.pooping();
     myDog.pooping();
+    myDog.speak();
+    myCat.speak();
+    myDuck.speak();
+    myVet.sings();
 
     }
 

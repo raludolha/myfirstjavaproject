@@ -1,6 +1,6 @@
 package com.company.lab2.AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private float weight;
@@ -9,6 +9,7 @@ public class Animal {
     private boolean sleeping;
     private String eating;
 
+    public abstract void speak();
     public boolean getSleeping() {
         return sleeping;
     }

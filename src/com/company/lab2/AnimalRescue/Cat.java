@@ -5,6 +5,11 @@ public class Cat extends Animal{
     private String Breed;
     private int Laziness;
 
+    @Override
+    public void speak() {
+        System.out.println("I am crying all the time");
+    }
+
     public boolean isPurr() {
         return Purr;
     }

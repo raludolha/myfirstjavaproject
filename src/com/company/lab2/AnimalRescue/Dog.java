@@ -10,7 +10,10 @@ public class Dog extends Animal{
     private String favoriteSport ;
 
 
-
+    @Override
+    public void speak() {
+        System.out.println("i am barking all day");
+    }
 
     public int getDogHealth() {
         return this.health;

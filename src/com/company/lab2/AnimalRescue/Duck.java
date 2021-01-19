@@ -4,6 +4,12 @@ public class Duck extends Animal{
     private String Type;
     private String Quack;
 
+    @Override
+    public void speak() {
+        System.out.println("i am hungry most of the time");
+
+    }
+
     public String getType() {
         return Type;
     }

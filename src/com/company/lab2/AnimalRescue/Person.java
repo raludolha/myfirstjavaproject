@@ -1,6 +1,8 @@
 package com.company.lab2.AnimalRescue;
 
-public class Person {
+public abstract class Person {
+        public abstract void sings();
+
 
         private String name ;
         private double money ;

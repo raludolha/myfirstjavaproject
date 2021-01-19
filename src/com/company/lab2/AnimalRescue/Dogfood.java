@@ -7,6 +7,10 @@ public class Dogfood {
         private int quantity ;
        private boolean disponibility ;
 
+
+
+
+
                 public String getDogfoodName(){
                 return this.name;
         }

@@ -1,6 +1,10 @@
 package com.company.lab2.AnimalRescue;
 
-public class Vet {
+public class Vet extends Person{
+    public void sings(){
+        System.out.println("lalalalalal");
+
+    }
 
        private String name ;
         private String specialization ;
