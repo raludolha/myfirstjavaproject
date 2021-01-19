@@ -559,7 +559,11 @@ public class LogicOp {
             b[i]=a[i];
         }
         return b;
+    }{
     }
-
-
 }
+
+//3. Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista,
+// iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista,
+// fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
+//
