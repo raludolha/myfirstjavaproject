@@ -579,5 +579,16 @@ public class LogicOp {
 //    6. In clasa LogicalOp, creati o metoda  'wait()'. Metoda sa nu returneze nimic,
 //    dar sa primeasca un parametru de tip int. In interiorul ei, tratati metoda Thread.sleep(),
 //    astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte. Ex: wait(5) -> asteapta 5 secunde.
+    public void wait(int ms)
+{
+    try
+    {
+        Thread.sleep(ms);
+    }
+    catch(InterruptedException ex)
+    {
+        System.out.println("Asteapta 5 secunde");
+    }
+}
 
 }

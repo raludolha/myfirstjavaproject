@@ -83,6 +83,7 @@ public class Tema3 {
 }
 
         op.findOutOfBounds(new int[]{1,2,3},6);
+        op.wait(5);
 
 
 
