@@ -573,7 +573,7 @@ public class LogicOp {
             System.out.println(array[position]);
         }
         catch(ArrayIndexOutOfBoundsException exception) {
-            System.out.println("Pozitia e mai mare decat lungimea array-ului");
+            System.out.println("Inside catch, number too large");
         }
     }
 //    6. In clasa LogicalOp, creati o metoda  'wait()'. Metoda sa nu returneze nimic,
